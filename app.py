@@ -9,7 +9,7 @@ fact = factorial(num)
 
 print(f"The factorial of {num} is {fact}")
 
-def change_cur_dir(self,path):
+def change_cur_dir(path):
         """
         Given a directory, cd in the directory
         return the directory path
@@ -18,7 +18,3 @@ def change_cur_dir(self,path):
             os.chdir(path)
             self.cur_dir = path
             return path
-        forward_path = self.cur_dir+'/'+path
-        os.chdir(forward_path)
-        self.cur_dir = forward_path
-        return forward_path
